@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Physiotherapie Hausbesuche Wien. Orthopädie, Neurologie, Lymphdrainage. 18.,19.,20.,21. und 22. Bezirk.">
+<title>Bc. Marek Záhorec | Physiotherapie Hausbesuche Wien</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div id="cookie-banner">
+Diese Website verwendet technisch notwendige Cookies.
+<button onclick="acceptCookies()">Akzeptieren</button>
+</div>
+
+<nav>
+<div class="container nav">
+<div class="logo">Bc. Marek Záhorec</div>
+<div>
+<a href="#leistungen">Leistungen</a>
+<a href="#preise">Preise</a>
+<a href="#kontakt">Kontakt</a>
+</div>
+</div>
+</nav>
+
+<header class="hero">
+<div class="container hero-grid">
+<div>
+<h1>Physiotherapie bei Ihnen zu Hause in Wien</h1>
+<p>Über 15 Jahre Berufserfahrung. Hausbesuche mit Schwerpunkt im 18., 19., 20., 21. und 22. Bezirk.</p>
+<a class="btn" href="tel:+436607417778"><i class="fa-solid fa-phone"></i> Anrufen</a>
+<a class="btn whatsapp" href="https://wa.me/436607417778"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+</div>
+<div>
+<img src="marek.JPG" alt="Marek Záhorec">
+</div>
+</div>
+</header>
+
+<section class="container">
+<h2>Über mich</h2>
+<p>Ich bin Bc. Marek Záhorec, selbstständiger Physiotherapeut mit mehr als 15 Jahren Berufserfahrung. Ausbildung in Piešťany und Spezialisierung auf Orthopädie, Neurologie, Rehabilitation und manuelle Lymphdrainage.</p>
+</section>
+
+<section id="leistungen" class="container">
+<h2>Leistungen</h2>
+<div class="cards">
+<div class="card"><i class="fa-solid fa-bone"></i><h3>Orthopädie</h3></div>
+<div class="card"><i class="fa-solid fa-brain"></i><h3>Neurologie</h3></div>
+<div class="card"><i class="fa-solid fa-droplet"></i><h3>Lymphdrainage</h3></div>
+<div class="card"><i class="fa-solid fa-house-medical"></i><h3>Hausbesuche</h3></div>
+<div class="card"><i class="fa-solid fa-person-cane"></i><h3>Geriatrie</h3></div>
+<div class="card"><i class="fa-solid fa-person-walking"></i><h3>Gangtraining</h3></div>
+</div>
+</section>
+
+<section class="blue">
+<div class="container">
+<h2>Kostenerstattung</h2>
+<p>Als Wahltherapeut rechne ich nicht direkt mit den Krankenkassen ab. Mit ärztlicher Verordnung können Kosten bei ÖGK, SVS oder BVAEB eingereicht werden. Eine private Zusatzversicherung kann weitere Kosten übernehmen.</p>
+</div>
+</section>
+
+<section id="preise" class="container">
+<h2>Preise</h2>
+<div class="cards">
+<div class="price"><h3>30 Minuten</h3><span>90 €</span></div>
+<div class="price"><h3>45 Minuten</h3><span>115 €</span></div>
+<div class="price"><h3>60 Minuten</h3><span>135 €</span></div>
+</div>
+</section>
+
+<section class="container">
+<h2>Terminanfrage</h2>
+<form action="https://formspree.io/f/DEIN_FORM_ID" method="POST" class="form">
+<input type="text" name="name" placeholder="Name" required>
+<input type="email" name="email" placeholder="E-Mail" required>
+<input type="tel" name="phone" placeholder="Telefon">
+<textarea name="message" placeholder="Ihre Nachricht"></textarea>
+<button type="submit">Termin anfragen</button>
+</form>
+<p><small>Nach Registrierung bei Formspree DEIN_FORM_ID ersetzen.</small></p>
+</section>
+
+<section id="kontakt" class="contact">
+<div class="container">
+<h2>Kontakt</h2>
+<p>📞 0660 741 7778</p>
+<p>✉ marekzaho@gmail.com</p>
+<p>WhatsApp verfügbar.</p>
+</div>
+</section>
+
+<footer>
+<p>Bc. Marek Záhorec | GBR: 19-GBR-176446</p>
+<p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+</footer>
+
+<a href="https://wa.me/436607417778" class="wa-float"><i class="fa-brands fa-whatsapp"></i></a>
+
+<script>
+function acceptCookies(){
+ localStorage.setItem('cookieAccepted','1');
+ document.getElementById('cookie-banner').style.display='none';
+}
+if(localStorage.getItem('cookieAccepted')){
+ document.addEventListener('DOMContentLoaded',()=>{
+  const b=document.getElementById('cookie-banner');
+  if(b) b.style.display='none';
+ });
+}
+</script>
+</body>
+</html>
